@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">loginActivity</string>
+    <string name="terms_conditions">By singing up you are agreeing to the <font color="#145DA0">terms and conditions</font> and <font color='#145DA0'>privacy policy</font></string>
+    <string name="don_t_have_account_log_in">Don\'t have account?<font color="#145DA0"> Log In</font></string>
+    <string name="otp_send_to_your_email_phone_number"><![CDATA[OTP send to your Email & Phone Number]]></string>
+    <string name="resend_otp"><font color="#145DA0">Resend OTP</font></string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="welcome_to_contolio">Welcome to Contolio</string>
+</resources>

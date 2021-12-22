@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imageDp">100dp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="margin_left">30dp</dimen>
+    <dimen name="margin_top">5dp</dimen>
+    <dimen name="margin_right">200dp</dimen>
+    <dimen name="margin_right_h_Button">10dp</dimen>
+    <dimen name="btn_radius">8dp</dimen>
+    <dimen name="btn_next">50dp</dimen>
+</resources>

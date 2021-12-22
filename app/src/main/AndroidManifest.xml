@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.loginactivity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/creativity"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/creativity"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LoginActivity">
+        <activity
+            android:name="availableUnitsActivity.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name="availableUnitsActivity.AvailableUnitsDetail"
+            android:exported="false" />
+        <activity
+            android:name=".SubmitFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name="availableUnitsActivity.AvailableUnitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UnitsManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OtpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
