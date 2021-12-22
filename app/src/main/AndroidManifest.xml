@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginActivity">
         <activity
+            android:name="profileActivity.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="profileActivity.MyProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="availableUnitsActivity.FeedbackActivity"
             android:exported="false" />
         <activity
             android:name="availableUnitsActivity.AvailableUnitsDetail"
-            android:exported="false" />
-        <activity
-            android:name=".SubmitFeedbackActivity"
             android:exported="false" />
         <activity
             android:name="availableUnitsActivity.AvailableUnitsActivity"

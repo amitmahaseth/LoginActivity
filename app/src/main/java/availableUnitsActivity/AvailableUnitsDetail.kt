@@ -2,9 +2,12 @@ package availableUnitsActivity
 
 import adapter.CustomHomeAdapeter
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.viewpager.widget.ViewPager
+import com.example.loginactivity.ProjectManagerActivity
 import com.example.loginactivity.R
 import com.example.loginactivity.databinding.ActivityAvailableUnitsBinding
 import com.example.loginactivity.databinding.ActivityAvailableUnitsDetailBinding
@@ -29,6 +32,12 @@ class AvailableUnitsDetail : AppCompatActivity() {
 
         viewPager.adapter = adapter
         tabLayout.setViewPager(viewPager)
+
+        binding.btnContactPropertyManager.setOnClickListener(View.OnClickListener {
+          val intent=Intent(this,ProjectManagerActivity::class.java)
+            startActivity(intent)
+            finish()
+        })
 
 
 

@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.example.loginactivity.databinding.ActivityHomeBinding;
 
 import availableUnitsActivity.AvailableUnitsActivity;
+import availableUnitsActivity.FeedbackActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -50,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
         binding.cardSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(HomeActivity.this,SubmitFeedbackActivity.class);
+                Intent intent=new Intent(HomeActivity.this, FeedbackActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_SHORT).show();
             }
