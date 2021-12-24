@@ -10,10 +10,10 @@
 
     <ImageView
         android:id="@+id/img_arrow_back"
-        android:layout_width="@dimen/_20sdp"
-        android:layout_height="@dimen/_20sdp"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
         android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:src="@drawable/arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,11 +22,11 @@
         android:id="@+id/tv_available"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:gravity="center"
         android:text="Available Units"
         android:textColor="@color/black"
-        android:textSize="@dimen/_10ssp"
+        android:textSize="@dimen/_14ssp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/img_arrow_back"
         app:layout_constraintEnd_toStartOf="@+id/img_notification_available_units"
@@ -34,9 +34,9 @@
 
     <ImageView
         android:id="@+id/img_notification_available_units"
-        android:layout_width="@dimen/_20sdp"
-        android:layout_height="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
         android:src="@drawable/notification"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,12 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_available"
         tools:listitem="@layout/list_home"/>
 

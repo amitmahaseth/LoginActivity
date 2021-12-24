@@ -38,6 +38,7 @@
         android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginEnd="@dimen/_20sdp"
         android:src="@drawable/notification"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

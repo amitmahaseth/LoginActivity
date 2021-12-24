@@ -19,5 +19,11 @@ class MyProfileActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         })
+
+        binding.btnEditChangePassword.setOnClickListener(View.OnClickListener {
+            val intent=Intent(this,ChangePasswordActivity::class.java)
+            startActivity(intent)
+            finish()
+        })
     }
 }

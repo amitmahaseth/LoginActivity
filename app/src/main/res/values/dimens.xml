@@ -8,4 +8,5 @@
     <dimen name="margin_right_h_Button">10dp</dimen>
     <dimen name="btn_radius">8dp</dimen>
     <dimen name="btn_next">50dp</dimen>
+
 </resources>

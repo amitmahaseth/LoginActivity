@@ -1,6 +1,6 @@
 package availableUnitsActivity;
 
-import ClickListener
+import model.ClickListener
 import adapter.HomeAdapter
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

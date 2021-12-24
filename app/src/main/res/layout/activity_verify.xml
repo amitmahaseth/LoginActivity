@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context="profileActivity.VerifyActivity">
+
+    <ImageView
+        android:id="@+id/img_edit_profile_arrow_back"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:gravity="center"
+        android:text="Verify"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_verify_your_otp_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Your OTP"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/img_edit_profile_arrow_back"
+        app:layout_constraintStart_toStartOf="@+id/img_edit_profile_arrow_back"
+        />
+    <TextView
+        android:id="@+id/tv_edit_your_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/otp_send_to_your_email_phone_number"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verify_your_otp_verify"
+        app:layout_constraintStart_toStartOf="@+id/tv_verify_your_otp_verify"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_edit_email_otp_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_edit_your_profile"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_edit_your_profile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/edt_edit_profile_phn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:hint="Email OTP"
+                android:maxLines="1"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_sec_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 sec"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_edit_email_otp_verify"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_resend_verify"
+        android:text="@string/resend_otp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/card_edit_email_otp_verify"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_verify_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_round_eng"
+        android:backgroundTint="@color/sky_blue"
+        android:text="Verify"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_resend_verify"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

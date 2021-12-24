@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.loginactivity">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -9,6 +10,21 @@
         android:roundIcon="@drawable/creativity"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginActivity">
+        <activity
+            android:name=".PaymentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MaintenanceRequestsActivity"
+            android:exported="false" />
+        <activity
+            android:name="profileActivity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name="profileActivity.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="profileActivity.VerifyActivity"
+            android:exported="false" />
         <activity
             android:name="profileActivity.EditProfileActivity"
             android:exported="false" />
@@ -23,9 +39,6 @@
             android:exported="false" />
         <activity
             android:name="availableUnitsActivity.AvailableUnitsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UnitsManagementActivity"
             android:exported="false" />
         <activity
             android:name=".ProjectManagerActivity"

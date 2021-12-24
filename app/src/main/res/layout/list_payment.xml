@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_maintenance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cos_maintenance"
+            android:layout_marginBottom="@dimen/_10sdp"
+            >
+
+            <TextView
+                android:id="@+id/tv_cheque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type-Cheque"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Date 21-12-21"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                android:id="@+id/payment_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/gray"
+                app:layout_constraintTop_toBottomOf="@id/tv_cheque"/>
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:textSize="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/payment_view"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+            <TextView
+                android:id="@+id/tv_amount_1200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$1200"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_15sdp"
+                app:layout_constraintTop_toBottomOf="@id/payment_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+            <TextView
+                android:id="@+id/tv_building_name_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Building Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_amount_1200"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+            <TextView
+                android:id="@+id/tv_payment_white_tower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White Tower"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_amount_1200"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+            <TextView
+                android:id="@+id/tv_unit_no_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Building Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_building_name_payment"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                />
+            <TextView
+                android:id="@+id/tv_payment_142"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="142"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/tv_building_name_payment"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

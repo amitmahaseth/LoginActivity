@@ -11,6 +11,7 @@ import com.example.loginactivity.databinding.ActivityHomeBinding;
 
 import availableUnitsActivity.AvailableUnitsActivity;
 import availableUnitsActivity.FeedbackActivity;
+import profileActivity.MyProfileActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         binding.cardProjectManager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(HomeActivity.this,ProjectManagerActivity.class);
+                Intent intent=new Intent(HomeActivity.this, MyProfileActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"Clicked",Toast.LENGTH_SHORT).show();
             }
@@ -33,7 +34,7 @@ public class HomeActivity extends AppCompatActivity {
         binding.cardUnitManagement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(HomeActivity.this,UnitsManagementActivity.class);
+                Intent intent=new Intent(HomeActivity.this,MaintenanceRequestsActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_SHORT).show();
             }

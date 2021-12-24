@@ -21,6 +21,15 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(LoginActivity.this,OtpActivity.class);
                 startActivity(intent);
+                finish();
+            }
+        });
+        binding.btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,PaymentsActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

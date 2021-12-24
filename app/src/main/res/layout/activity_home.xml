@@ -9,10 +9,10 @@
 
   <ImageView
       android:id="@+id/img_three_line"
-      android:layout_width="@dimen/_20sdp"
-      android:layout_height="@dimen/_20sdp"
+      android:layout_width="@dimen/_25sdp"
+      android:layout_height="@dimen/_25sdp"
       android:layout_marginLeft="@dimen/_20sdp"
-      android:layout_marginTop="@dimen/_50sdp"
+      android:layout_marginTop="@dimen/_10sdp"
       android:src="@drawable/three_lines"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
@@ -21,7 +21,7 @@
       android:id="@+id/tv_home"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_marginTop="@dimen/_50sdp"
+      android:layout_marginTop="@dimen/_10sdp"
       android:gravity="center"
       android:hint="Home"
       android:textColor="@color/black"
@@ -33,9 +33,9 @@
 
   <ImageView
       android:id="@+id/img_notification"
-      android:layout_width="@dimen/_20sdp"
-      android:layout_height="@dimen/_20sdp"
-      android:layout_marginTop="@dimen/_50sdp"
+      android:layout_width="@dimen/_25sdp"
+      android:layout_height="@dimen/_25sdp"
+      android:layout_marginTop="@dimen/_10sdp"
       android:layout_marginRight="@dimen/_20sdp"
       android:src="@drawable/notification"
       app:layout_constraintEnd_toEndOf="parent"
