@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/constraintsTop"
     android:background="@color/gray"
     tools:context=".SignUpActivity">
 
@@ -167,18 +168,17 @@
 
             <EditText
                 android:id="@+id/edt_email"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:ems="10"
                 android:hint="Email"
-                android:maxLines="1"
                 android:inputType="textEmailAddress"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:paddingEnd="10dp"
-                android:paddingBottom="10dp"
+                android:maxLines="1"
+                android:padding="@dimen/_10sdp"
+
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/img_email" />
 
             <ImageView
@@ -212,7 +212,7 @@
 
             <EditText
                 android:id="@+id/edt_phone"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:ems="10"
@@ -223,6 +223,7 @@
                 android:hint="Phone"
                 android:maxLines="1"
                 android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/tv_slash"
                  />
@@ -291,7 +292,7 @@
 
             <EditText
                 android:id="@+id/edt_pass"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:ems="10"
@@ -302,6 +303,7 @@
                 android:hint="Password"
                 android:inputType="text"
                 android:maxLines="1"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/img_password"
                 app:layout_constraintBottom_toBottomOf="parent"
                 />
@@ -366,6 +368,7 @@
         android:layout_marginBottom="10dp"
         android:text="Don't have an account?"/>
     <TextView
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@+id/tv_account"

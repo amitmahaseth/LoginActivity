@@ -9,6 +9,7 @@ import com.example.loginactivity.databinding.ActivityChangePasswordBinding
 
 class ChangePasswordActivity : AppCompatActivity() {
     private lateinit var binding: ActivityChangePasswordBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityChangePasswordBinding.inflate(layoutInflater)

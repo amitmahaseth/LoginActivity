@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "567614445895",
+    "project_id": "loginactivity-17299",
+    "storage_bucket": "loginactivity-17299.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567614445895:android:4ce80258f330b188fe5462",
+        "android_client_info": {
+          "package_name": "com.example.loginactivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567614445895-08k37ioi6lmndlsqcubemf95ctrhle8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjtURl89rr7ktSApEbbgGtiReTGKCIsfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567614445895-08k37ioi6lmndlsqcubemf95ctrhle8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

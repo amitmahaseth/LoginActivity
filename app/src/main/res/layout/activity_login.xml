@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/linearTop"
     tools:context=".LoginActivity">
 
     <TextView
@@ -42,7 +43,7 @@
         android:layout_marginRight="20dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
 
             android:orientation="horizontal">
@@ -53,9 +54,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_height="20dp"/>
             <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_marginLeft="6dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@null"
             android:hint="Email/Phone"
             android:maxLines="1"
@@ -77,8 +78,8 @@
         android:layout_marginRight="20dp">
 
         <LinearLayout
-            android:layout_width="387dp"
-            android:layout_height="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:orientation="horizontal">
 
@@ -90,8 +91,8 @@
                 android:background="@drawable/pass" />
 
             <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="6dp"
                 android:background="@null"
                 android:hint="Password"

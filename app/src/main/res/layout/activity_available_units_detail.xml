@@ -81,6 +81,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:dotsSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             app:layout_constraintTop_toBottomOf="@+id/viewPager"
             app:tabIndicatorHeight="0dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
