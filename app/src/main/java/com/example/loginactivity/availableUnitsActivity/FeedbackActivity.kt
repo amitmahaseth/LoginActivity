@@ -1,4 +1,4 @@
-package availableUnitsActivity
+package com.example.loginactivity.availableUnitsActivity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

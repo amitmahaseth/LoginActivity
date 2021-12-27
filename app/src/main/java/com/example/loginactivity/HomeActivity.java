@@ -9,9 +9,9 @@ import android.widget.Toast;
 
 import com.example.loginactivity.databinding.ActivityHomeBinding;
 
-import availableUnitsActivity.AvailableUnitsActivity;
-import availableUnitsActivity.FeedbackActivity;
-import profileActivity.MyProfileActivity;
+import com.example.loginactivity.availableUnitsActivity.AvailableUnitsActivity;
+import com.example.loginactivity.availableUnitsActivity.FeedbackActivity;
+import com.example.loginactivity.profileActivity.MyProfileActivity;
 
 public class HomeActivity extends AppCompatActivity {
 

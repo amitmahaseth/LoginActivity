@@ -1,4 +1,4 @@
-package fragment
+package com.example.loginactivity.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -17,7 +17,7 @@ class ClosedFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this com.example.loginactivity.fragment
         return inflater.inflate(R.layout.fragment_closed, container, false)
     }
 }

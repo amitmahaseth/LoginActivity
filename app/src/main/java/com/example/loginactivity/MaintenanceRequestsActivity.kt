@@ -1,18 +1,13 @@
 package com.example.loginactivity
 
-import BaseData.BaseActivity
-import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
+import com.example.loginactivity.BaseData.BaseActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Switch
 import com.example.loginactivity.databinding.ActivityMaintenanceRequestsBinding
-import com.example.loginactivity.databinding.FragmentCanceledBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
-import fragment.CanceledFragment
-import fragment.ClosedFragment
-import fragment.CurrentFragment
+import com.example.loginactivity.fragment.CanceledFragment
+import com.example.loginactivity.fragment.ClosedFragment
+import com.example.loginactivity.fragment.CurrentFragment
 
 
 class MaintenanceRequestsActivity : BaseActivity() {

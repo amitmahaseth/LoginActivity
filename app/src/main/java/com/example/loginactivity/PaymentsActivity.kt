@@ -1,7 +1,6 @@
 package com.example.loginactivity
 
-import adapter.PaymentAdapter
-import android.content.Context
+import com.example.loginactivity.adapter.PaymentAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager

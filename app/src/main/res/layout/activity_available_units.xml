@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/gray"
-    tools:context="availableUnitsActivity.AvailableUnitsActivity">
+    tools:context="com.example.loginactivity.availableUnitsActivity.AvailableUnitsActivity">
 
     <ImageView
         android:id="@+id/img_arrow_back"

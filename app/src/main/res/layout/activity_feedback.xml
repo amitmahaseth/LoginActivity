@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="availableUnitsActivity.FeedbackActivity">
+    tools:context="com.example.loginactivity.availableUnitsActivity.FeedbackActivity">
 
     <ImageView
         android:id="@+id/img_arrow_back_detail3"

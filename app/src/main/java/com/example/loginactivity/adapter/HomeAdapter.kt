@@ -1,6 +1,6 @@
-package adapter
+package com.example.loginactivity.adapter
 
-import model.ClickListener
+import com.example.loginactivity.model.ClickListener
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

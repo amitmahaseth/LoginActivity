@@ -1,4 +1,4 @@
-package fragment
+package com.example.loginactivity.fragment
 
 import android.graphics.Color
 import android.os.Bundle
@@ -38,7 +38,7 @@ class CanceledFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this com.example.loginactivity.fragment
         binding= FragmentCanceledBinding.inflate(layoutInflater)
         selectableChat()
         binding.btnChat.setOnClickListener(View.OnClickListener {

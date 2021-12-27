@@ -1,5 +1,5 @@
 package com.example.loginactivity;
-import BaseData.BaseActivity
+import com.example.loginactivity.BaseData.BaseActivity
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;

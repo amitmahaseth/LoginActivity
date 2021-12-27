@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray"
-    tools:context="profileActivity.SettingActivity">
+    tools:context="com.example.loginactivity.profileActivity.SettingActivity">
 
     <ImageView
         android:id="@+id/img_setting_arrow_back"

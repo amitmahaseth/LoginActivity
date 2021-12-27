@@ -13,14 +13,9 @@
         android:roundIcon="@drawable/creativity"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginActivity">
+
         <activity
-            android:name=".MapActivity"
-            android:exported="false" />
-        <activity
-            android:name=".NotificationActivity"
-            android:exported="false" />
-        <activity
-            android:name="BaseData.BaseActivity"
+            android:name="com.example.loginactivity.BaseData.BaseActivity"
             android:exported="false" />
         <activity
             android:name=".PaymentsActivity"
@@ -29,28 +24,28 @@
             android:name=".MaintenanceRequestsActivity"
             android:exported="false" />
         <activity
-            android:name="profileActivity.SettingActivity"
+            android:name="com.example.loginactivity.profileActivity.SettingActivity"
             android:exported="false" />
         <activity
-            android:name="profileActivity.ChangePasswordActivity"
+            android:name="com.example.loginactivity.profileActivity.ChangePasswordActivity"
             android:exported="false" />
         <activity
-            android:name="profileActivity.VerifyActivity"
+            android:name="com.example.loginactivity.profileActivity.VerifyActivity"
             android:exported="false" />
         <activity
-            android:name="profileActivity.EditProfileActivity"
+            android:name="com.example.loginactivity.profileActivity.EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name="profileActivity.MyProfileActivity"
+            android:name="com.example.loginactivity.profileActivity.MyProfileActivity"
             android:exported="false" />
         <activity
-            android:name="availableUnitsActivity.FeedbackActivity"
+            android:name="com.example.loginactivity.availableUnitsActivity.FeedbackActivity"
             android:exported="false" />
         <activity
-            android:name="availableUnitsActivity.AvailableUnitsDetail"
+            android:name="com.example.loginactivity.availableUnitsActivity.AvailableUnitsDetail"
             android:exported="false" />
         <activity
-            android:name="availableUnitsActivity.AvailableUnitsActivity"
+            android:name="com.example.loginactivity.availableUnitsActivity.AvailableUnitsActivity"
             android:exported="false" />
         <activity
             android:name=".ProjectManagerActivity"
@@ -96,10 +91,10 @@
         </activity>
 
         <service
-            android:name="firebase.MyFirebaseMessagingService"
+            android:name=".firebase.NotificationHelper"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
     </application>

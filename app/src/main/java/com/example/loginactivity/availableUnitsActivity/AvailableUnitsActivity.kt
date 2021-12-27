@@ -1,7 +1,7 @@
-package availableUnitsActivity;
+package com.example.loginactivity.availableUnitsActivity;
 
-import model.ClickListener
-import adapter.HomeAdapter
+import com.example.loginactivity.model.ClickListener
+import com.example.loginactivity.adapter.HomeAdapter
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager

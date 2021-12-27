@@ -1,10 +1,9 @@
-package profileActivity
+package com.example.loginactivity.profileActivity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.loginactivity.R
 import com.example.loginactivity.databinding.ActivityMyProfileBinding
 
 class MyProfileActivity : AppCompatActivity() {

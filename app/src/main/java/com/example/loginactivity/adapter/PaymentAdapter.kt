@@ -1,4 +1,4 @@
-package adapter
+package com.example.loginactivity.adapter
 
 import android.content.Context
 import android.view.LayoutInflater

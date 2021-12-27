@@ -1,4 +1,4 @@
-package profileActivity
+package com.example.loginactivity.profileActivity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.example.loginactivity.HomeActivity
-import com.example.loginactivity.R
 import com.example.loginactivity.databinding.ActivityVerifyBinding
 
 class VerifyActivity : AppCompatActivity() {

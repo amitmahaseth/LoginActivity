@@ -1,12 +1,9 @@
-package profileActivity
+package com.example.loginactivity.profileActivity
 
 import android.content.Intent
-import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.example.loginactivity.HomeActivity
-import com.example.loginactivity.R
 import com.example.loginactivity.databinding.ActivityEditProfileBinding
 
 class EditProfileActivity : AppCompatActivity() {
@@ -17,10 +14,10 @@ class EditProfileActivity : AppCompatActivity() {
         binding= ActivityEditProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnEditProfileSubmit.setOnClickListener(View.OnClickListener {
+        binding.btnEditProfileSubmit.setOnClickListener{
             val intent=Intent(this,HomeActivity::class.java)
             startActivity(intent)
             finish()
-        })
+        }
     }
 }

@@ -1,14 +1,12 @@
-package BaseData
+package com.example.loginactivity.BaseData
 
 import android.app.ProgressDialog
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.fragment.app.Fragment
 import com.example.loginactivity.R
-import fragment.CanceledFragment
 
 open class BaseActivity : AppCompatActivity() {
     private lateinit var progressDialog: ProgressDialog
@@ -18,7 +16,7 @@ open class BaseActivity : AppCompatActivity() {
 
     }
 
-    //for replace fragment
+    //for replace com.example.loginactivity.fragment
     public fun replaceFragmentMethod(fragment: Fragment) {
         supportFragmentManager.beginTransaction().replace(R.id.frameLayout, fragment).commit()
     }
