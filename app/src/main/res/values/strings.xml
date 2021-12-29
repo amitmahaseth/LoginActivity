@@ -15,5 +15,8 @@
     <string name="history">History</string>
     <string name="over_due">Over Due</string>
     <string name="upcoming">Upcoming</string>
-
+    <string name="msg_subscribed">subscribed</string>
+    <string name="msg_subscribe_failed">Failed subscribed</string>
+    <string name="fcm_message">Fcm Message</string>
+    <string name="default_notification_channel_id">Notification Channel ID</string>
 </resources>

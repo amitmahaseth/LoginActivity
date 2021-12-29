@@ -18,6 +18,7 @@
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_available_units_detail.xml" value="0.14" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_base.xml" value="0.153125" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_change_password.xml" value="0.2" />
+        <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_chat.xml" value="0.153125" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_details.xml" value="0.33" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_feedback.xml" value="0.17" />
@@ -35,6 +36,7 @@
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_splash_screen.xml" value="0.18" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_submit_feedback.xml" value="0.34270833333333334" />
+        <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_subscribe.xml" value="0.153125" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_units_management.xml" value="0.21171171171171171" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_verify.xml" value="0.2" />
         <entry key="..\:/Users/Backend 9/AndroidStudioProjects/loginActivity/app/src/main/res/layout/activity_verify_otp.xml" value="0.18" />

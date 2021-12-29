@@ -5,13 +5,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast
 import com.example.loginactivity.databinding.ActivitySignUpBinding;
+import com.example.loginactivity.model.User
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 
 class SignUpActivity : BaseActivity() {
 
     private lateinit var binding: ActivitySignUpBinding
     private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var database:DatabaseReference
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,25 +24,26 @@ class SignUpActivity : BaseActivity() {
         setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
 
+
         binding.btnNext.setOnClickListener(View.OnClickListener() {
 
             if (SignUpUser()) {
                 showProgressDialog()
                 firebaseAuth.createUserWithEmailAndPassword(binding.edtEmail.text.toString().trim(), binding.edtPass.text.toString().trim()).addOnCompleteListener {
-                    hideProgressDialog()
                     closeKeyBoard()
+                    saveUserDataToFirebase()
                     if (it.isSuccessful) {
-                        Toast.makeText(this, "Successful SignUp", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this, LoginActivity::class.java)
-                        startActivity(intent)
-                        finish()
+                       // Toast.makeText(this, "Successful SignUp", Toast.LENGTH_SHORT).show()
+
                     } else {
+                        hideProgressDialog()
                         Toast.makeText(this, "Email and Password Can't be Blank", Toast.LENGTH_SHORT).show()
 
                     }
 
                 }
             }
+
 
         })
         binding.tvLogin.setOnClickListener(View.OnClickListener {
@@ -49,6 +54,28 @@ class SignUpActivity : BaseActivity() {
 
         binding.constraintsTop.setOnClickListener {
             closeKeyBoard()
+        }
+    }
+
+    private fun saveUserDataToFirebase()
+    {
+        val firstName=binding.edtFirst.text.toString()
+        val lastName=binding.edtLast.text.toString()
+        val userEmail=binding.edtEmail.text.toString()
+        val userPhone=binding.edtPhone.text.toString()
+        val userId= firebaseAuth.currentUser?.uid
+        database=FirebaseDatabase.getInstance().getReference("Users")
+        val user=User(firstName,lastName,userEmail,userPhone)
+        database.child(userId.toString()).setValue(user).addOnSuccessListener {
+            hideProgressDialog()
+            saveLoggedIn(true)
+            Toast.makeText(this, "Successfully", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+            finish()
+        }.addOnFailureListener {
+            hideProgressDialog()
+            Toast.makeText(this, "UnSuccessfully", Toast.LENGTH_SHORT).show()
         }
     }
 

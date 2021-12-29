@@ -37,7 +37,8 @@ class LoginActivity:BaseActivity() {
                     .addOnCompleteListener {
                         hideProgressDialog()
                         if (it.isSuccessful){
-                            val  intent= Intent(this,PaymentsActivity::class.java)
+                            saveLoggedIn(true)
+                            val  intent= Intent(this,ChatActivity::class.java)
                             startActivity(intent)
                             finish()
                             Toast.makeText(this,"Thanks For Login",Toast.LENGTH_SHORT).show()
